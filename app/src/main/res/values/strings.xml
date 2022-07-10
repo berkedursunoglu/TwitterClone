@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TwitterClone</string>
+    <string name="rationale_title">Neden İzin İstiyoruz.</string>
+    <string name="rationale_message">Uygulamanın resim yükleyebilme fonksiyonunu kullanabilmek için galeriye ulaşması lazım bu yüzden bu izin verilmelidir.</string>
+</resources>

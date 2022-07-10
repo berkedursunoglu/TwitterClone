@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="postActivity"
+            type="com.berkedursunoglu.twitterclone.activitys.PostActivity" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.PostActivity">
+
+    <ImageView
+        android:id="@+id/post_imageview"
+        android:onClick="@{()-> postActivity.galeriaPermission()}"
+        android:layout_width="334dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/select_image" />
+
+    <Button
+        android:id="@+id/post_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="Postu Yükle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/post_imageview"
+        app:layout_constraintStart_toStartOf="@+id/post_imageview" />
+
+    <EditText
+        android:id="@+id/post_comment_edittext"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Yorumun"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/post_imageview"
+        app:layout_constraintStart_toStartOf="@+id/post_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/post_imageview" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
