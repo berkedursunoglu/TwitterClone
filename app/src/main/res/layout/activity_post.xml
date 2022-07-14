@@ -27,6 +27,8 @@
         app:srcCompat="@drawable/select_image" />
 
     <Button
+        android:textColor="@color/black"
+        android:backgroundTint="#6EC7EA"
         android:id="@+id/post_upload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -33,6 +33,4 @@ class LoginPageViewModel : ViewModel() {
             println(it.user)
         }
     }
-
-
 }

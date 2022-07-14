@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="databinding"
+            type="com.berkedursunoglu.twitterclone.activitys.MainPageActivity" />
+    </data>
+
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -10,6 +16,9 @@
     tools:context=".activitys.MainPageActivity">
 
     <androidx.appcompat.widget.Toolbar
+        app:title="TwitterClone"
+        app:titleTextColor="@color/black"
+        android:backgroundTint="#6EC7EA"
         android:id="@+id/main_page_toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -35,9 +44,11 @@
         android:layout_height="61dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
-        android:backgroundTint="#00FFFFFF"
+        android:backgroundTint="#6EC7EA"
+        android:onClick="@{()-> databinding.postButton()}"
         app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="@+id/recyclerView"
-        app:srcCompat="@drawable/write_image" />
+        app:srcCompat="@drawable/write_image"
+        tools:ignore="UsingOnClickInXml" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
